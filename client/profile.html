@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        
+        <meta charset="utf-8" />
+        <title>Profile | Signature Hires</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Signature Hires" name="description" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <link href="assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css">
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        <link href="assets/css/custom-style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body data-sidebar="dark">
+    
+    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box">
+                           <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm-light.png" alt="logo-sm-light" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-light.png" alt="logo-light" height="35">
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect" id="vertical-menu-btn">
+                            <i class="ri-menu-2-line align-middle"></i>
+                        </button>
+
+                        <!-- App Search-->
+                        <form class="app-search d-none d-lg-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="ri-search-line"></span>
+                            </div>
+                        </form>
+
+                       
+                    </div>
+
+                    <div class="d-flex">
+
+                        
+
+                        <div class="dropdown d-none d-lg-inline-block ms-1">
+                            <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
+                                <i class="ri-fullscreen-line"></i>
+                            </button>
+                        </div>
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="ri-notification-3-line"></i>
+                                <span class="noti-dot"></span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                aria-labelledby="page-header-notifications-dropdown">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h6 class="m-0"> Notifications </h6>
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="#!" class="small"> View All</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-simplebar style="max-height: 230px;">
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mb-1">Your order is placed</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">If several languages coalesce the grammar</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex">
+                                            <img src="assets/images/users/avatar-3.jpg"
+                                                class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="flex-1">
+                                                <h6 class="mb-1">James Lemire</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">It will seem like simplified English.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-success rounded-circle font-size-16">
+                                                    <i class="ri-checkbox-circle-line"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mb-1">Your item is shipped</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">If several languages coalesce the grammar</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex">
+                                            <img src="assets/images/users/avatar-4.jpg"
+                                                class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="flex-1">
+                                                <h6 class="mb-1">Salena Layfield</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">As a skeptical Cambridge friend of mine occidental.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="p-2 border-top">
+                                    <div class="d-grid">
+                                        <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                            <i class="mdi mdi-arrow-right-circle me-1"></i> View More..
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-inline-block user-dropdown">
+                            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-2.jpg"
+                                    alt="Header Avatar">
+                                <span class="d-none d-xl-inline-block ms-1">Kevin</span>
+                                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <a class="dropdown-item" href="#"><i class="ri-user-line align-middle me-1"></i> Profile</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="index.html"><i class="ri-shut-down-line align-middle me-1 text-danger"></i> Logout</a>
+                            </div>
+                        </div>
+
+                        
+            
+                    </div>
+                </div>
+            </header>
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="vertical-menu">
+
+                <div data-simplebar class="h-100">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu list-unstyled" id="side-menu">
+                            <li class="menu-title">Menu</li>
+
+                            <li>
+                                <a href="dashboard.html" class="waves-effect">
+                                    <i class="ri-dashboard-line"></i>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="job-post.html" class="waves-effect">
+                                    <i class="ri-briefcase-line"></i>
+                                    <span>Job Post</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="waves-effect">
+                                    <i class="fas fa-podcast"></i>
+                                    <span>Interview</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="hired.html" class="waves-effect">
+                                    <i class="fas fa-handshake"></i>
+                                    <span>Hired</span>
+                                </a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                    <!-- Sidebar -->
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+            
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                    <h4 class="mb-sm-0">Profile</h4>
+
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+                                            <li class="breadcrumb-item active">Profile</li>
+                                        </ol>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+
+                        <div class="row justify-content-center">
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row mb-3">
+
+                                            <div class="col-sm-12 mt-3 mb-4 text-center">
+                                                <div class="profile-pic-wrap">
+                                                <div class="circle">
+                                                    <img class="profile-pic" src="assets/images/users/avatar-2.jpg">
+                                             
+                                                  </div>
+                                                  <div class="p-image">
+                                                    <i class="fa fa-camera upload-button"></i>
+                                                     <input class="file-upload" type="file" accept="image/*"/>
+                                                  </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-12">
+                                                <label  class="col-sm-12 col-form-label">Full Name</label>
+                                                <div class="col-sm-12">
+                                                    <input class="form-control" type="text" value="Kevin Smith" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-12">
+                                                <label  class="col-sm-12 col-form-label">Email address</label>
+                                                <div class="col-sm-12">
+                                                    <input class="form-control" type="email" value="kevinsmith@gmail.com" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <label  class="col-sm-12 col-form-label">Current Password</label>
+                                                <div class="col-sm-12">
+                                                    <input class="form-control" type="password" value="123456" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <label  class="col-sm-12 col-form-label">New Password</label>
+                                                <div class="col-sm-12">
+                                                    <input class="form-control" type="password" value="" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <label  class="col-sm-12 col-form-label">Confirm New Password</label>
+                                                <div class="col-sm-12">
+                                                    <input class="form-control" type="password" value="" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-12 mt-4 text-center">
+                                            <button type="submit" class="btn btn-primary waves-effect waves-light me-1">
+                                                Save
+                                            </button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end col -->
+                        </div>
+
+
+                             
+                        
+                        
+                        
+
+                        
+                        <!-- end row -->
+
+                        
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+                
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                © <script>document.write(new Date().getFullYear())</script> Signature Hires. All rights reserved.
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="text-sm-end d-none d-sm-block">
+                                    Crafted with <i class="mdi mdi-heart text-danger"></i> by Elinsys
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+
+        <script src="assets/libs/select2/js/select2.min.js"></script>
+
+        <!-- bs custom file input plugin -->
+        <script src="assets/libs/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+
+        <script src="assets/js/pages/form-element.init.js"></script>
+        
+          <!--tinymce js-->
+          <script src="assets/libs/tinymce/tinymce.min.js"></script>
+
+        <script src="assets/js/app.js"></script>
+        
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var maxFieldLimit = 10; //Input fields increment limitation
+                var add_more_button = $('.add_button'); //Add button selector
+                var Fieldwrapper = $('.work-experience-wrap'); //Input field wrapper
+                var fieldHTML = '<div id="work-experience" class="row mb-3 work-experience-wrap"> <div class="col-sm-3"> <label  class="col-sm-12 col-form-label">Company name</label> <input class="form-control" type="text" placeholder="Company name" id="example-text-input"> </div><div class="col-sm-3"> <label  class="col-sm-12 col-form-label">Job title</label> <input class="form-control" type="text" placeholder="Job title" id="example-text-input"> </div><div class="col-sm-2"> <label  class="col-sm-12 col-form-label">Start date</label> <input class="form-control" type="date" placeholder="Start date" id="example-text-input"> </div><div class="col-sm-2"> <label  class="col-sm-12 col-form-label">End date</label> <input class="form-control" type="date" placeholder="End date" id="example-text-input"> </div><div class="col-sm-2"> <label  class="col-sm-12 col-form-label">&nbsp;</label> <button type="button"  class="btn btn-danger waves-effect waves-light me-1 remove_button">Remove</button> </div></div>'; //New input field html 
+                var x = 1; //Initial field counter is 1
+                $(add_more_button).click(function(){ //Once add button is clicked
+                    if(x < maxFieldLimit){ //Check maximum number of input fields
+                        x++; //Increment field counter
+                        //$(Fieldwrapper).append(fieldHTML); // Add field html
+                        $(Fieldwrapper).after( $(fieldHTML ) );
+                    }
+                });
+                $('.work-experience-main').on('click', '.remove_button', function(e){ //Once remove button is clicked
+                    e.preventDefault();
+                    //$(this).parent('#test').remove(); //Remove field html
+                    $(this).closest("#work-experience").remove();
+                    x--; //Decrement field counter
+                });
+                
+            });
+            </script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        var maxFieldLimit1 = 10; //Input fields increment limitation
+        var add_more_button1 = $('.add_button_e'); //Add button selector
+        var Fieldwrapper1 = $('.education-wrap'); //Input field wrapper
+        var fieldHTML1 = '<div id="education" class="row mb-3 education-wrap"> <div class="col-sm-3"> <label class="col-sm-12 col-form-label">Education name</label> <input class="form-control" type="text" placeholder="Education name" id="example-text-input"> </div><div class="col-sm-3"> <label class="col-sm-12 col-form-label">Percentage</label> <input class="form-control" type="text" placeholder="Percentage" id="example-text-input"> </div><div class="col-sm-2"> <label class="col-sm-12 col-form-label">Grade</label> <input class="form-control" type="text" placeholder="Grade" id="example-text-input"> </div><div class="col-sm-2"> <label class="col-sm-12 col-form-label">Passing year</label> <input class="form-control" type="text" placeholder="Passing year" id="example-text-input"> </div><div class="col-sm-2"> <label class="col-sm-12 col-form-label">&nbsp;</label> <button type="button" class="btn btn-danger waves-effect waves-light me-1 remove_button1">Remove</button> </div></div>'; //New input field html 
+        var x = 1; //Initial field counter is 1
+        $(add_more_button1).click(function(){ //Once add button is clicked
+            if(x < maxFieldLimit1){ //Check maximum number of input fields
+                x++; //Increment field counter
+                //$(Fieldwrapper).append(fieldHTML); // Add field html
+                $(Fieldwrapper1).after( $(fieldHTML1 ) );
+            }
+        });
+        $('.education-main').on('click', '.remove_button1', function(e){ //Once remove button is clicked
+            e.preventDefault();
+            //$(this).parent('#test').remove(); //Remove field html
+            $(this).closest("#education").remove();
+            x--; //Decrement field counter
+        });
+        
+    });
+    </script>
+
+            <script>
+               $(document).ready(function() {
+                var readURL = function(input) {
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+
+                        reader.onload = function (e) {
+                            $('.profile-pic').attr('src', e.target.result);
+                        }
+
+                        reader.readAsDataURL(input.files[0]);
+                    }
+                }
+                $(".file-upload").on('change', function(){
+                    readURL(this);
+                });
+                $(".upload-button").on('click', function() {
+                $(".file-upload").click();
+                });
+                });
+            </script>
+
+    </body>
+</html>
