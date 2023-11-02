@@ -1,0 +1,117 @@
+.details-page-wrap label {color: #000;}
+body[data-sidebar=dark].vertical-collpsed {min-height: auto;}
+.sortlist-checkbox .form-check-input[type=checkbox] {width: 20px;height: 20px;}
+.sortlist-checkbox .form-check-input:checked {background-color: #1cbb8c;border-color: #1cbb8c;}
+.cand-rejected-icon i {
+    font-size: 28px !important;
+    line-height: 27px;
+    vertical-align: top;
+}
+.cand-filterbtn .btn-light {
+    background-color: #ffff;
+    border-color: #fff;
+    font-size: 14px;
+    margin-right: 20px;
+    border-radius: 8px;
+    color: #232B3A;
+    font-family: Inter,sans-serif;
+    font-weight: normal;
+}
+#Candidate-filter-btn {
+    background-color: #ffff;
+    border-color: #fff;
+    font-size: 16px;
+    margin-right: 20px;
+    border-radius: 8px;
+    color: #232B3A;
+    font-family: Inter,sans-serif;
+    font-weight: 500;
+}
+.cand-filterbtn {display: none;}
+#Candidate-filter-btn:focus, .cand-filterbtn .btn-light:focus {box-shadow: none;}
+.canfil-cmp-name {font-size: 16px;margin-bottom: 0; display: inline-block;vertical-align: middle;}
+.canfil-cmp-name b {font-size: 20px;}
+.pr-25 {padding-right: 25px;}
+.cand-det-right .card, .cand-det-left .card {height: calc(100% - 24px);}
+.cand-det-left .card-body {
+    padding: 0;
+}
+
+.cand-sorting-top {background-color: #FAF9F8;padding: 1.25rem 1.25rem;}
+.cand-sorting-top p {margin-bottom: 0;}
+.cand-sorting-list ul {margin: 0;padding: 0;}
+.cand-sorting-list ul li {list-style-type: none;border-bottom: 1px solid #E3E3E3;padding: 1rem 1.25rem;}
+.cand-sorting-list ul li.active {background: #F1F9FF;}
+.cand-sorting-list ul li p {margin-bottom: 0;}
+.cand-sorting-list ul li h5 {margin-bottom: 2px;}
+.logo-lg img {height: 50px;}
+.logo-sm img {height: 32px;}
+
+
+
+
+
+
+.profile-pic-wrap .profile-pic {
+    width: 160px;
+    max-height: 160px;
+    display: inline-block;
+    object-fit: cover;
+    vertical-align: middle;
+    height: 160px;
+}
+.profile-pic-wrap .file-upload {display: none;}
+.profile-pic-wrap .circle {
+    overflow: hidden;
+    width: 170px;
+    height: 170px;
+    border: 5px solid #f1f5f7;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.profile-pic-wrap .p-image {
+    position: absolute;
+    bottom: 20px;
+    right: 5px;
+    color: #252b3b;
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.profile-pic-wrap .p-image:hover {transition: all .3s cubic-bezier(.175, .885, .32, 1.275);}
+.profile-pic-wrap .upload-button {
+    font-size: 30px;
+    cursor: pointer;
+}
+.profile-pic-wrap .upload-button:hover {transition: all .3s cubic-bezier(.175, .885, .32, 1.275);color: #999;}
+.profile-pic-wrap {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.employee-statusradio-wrap {display: none;}
+
+
+.jobdet-tab-wrap .nav-tabs {
+    border-bottom: 0px solid #ced4da;
+    background-color: white;
+    margin-bottom: 25px;
+}
+.jobdet-tab-wrap .nav-tabs .nav-link {
+    border-bottom: 2px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    padding: 20px 30px;
+    margin-bottom: 0px;
+    color: #abadae;
+    font-weight: bold;
+    font-size: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.jobdet-tab-wrap .nav-tabs .nav-link.active {
+    border-bottom: 2px solid #252b3b;
+    color: #252b3b;
+}
+.whatsapp-number-wrap {display: none;}
