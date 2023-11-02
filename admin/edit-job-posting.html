@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        
+        <meta charset="utf-8" />
+        <title>Edit Job Posting | Signature Hires</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Signature Hires" name="description" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <link href="assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+        <link href="assets/libs/spectrum-colorpicker2/spectrum.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet">
+
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        <link href="assets/css/custom-style.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body data-sidebar="dark">
+    
+    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box">
+                           <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm-light.png" alt="logo-sm-light" height="22">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-light.png" alt="logo-light" height="35">
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect" id="vertical-menu-btn">
+                            <i class="ri-menu-2-line align-middle"></i>
+                        </button>
+
+                        <!-- App Search-->
+                        <form class="app-search d-none d-lg-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="ri-search-line"></span>
+                            </div>
+                        </form>
+
+                       
+                    </div>
+
+                    <div class="d-flex">
+
+                        
+
+                        <div class="dropdown d-none d-lg-inline-block ms-1">
+                            <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
+                                <i class="ri-fullscreen-line"></i>
+                            </button>
+                        </div>
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="ri-notification-3-line"></i>
+                                <span class="noti-dot"></span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                aria-labelledby="page-header-notifications-dropdown">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h6 class="m-0"> Notifications </h6>
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="#!" class="small"> View All</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-simplebar style="max-height: 230px;">
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                                    <i class="ri-shopping-cart-line"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mb-1">Your order is placed</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">If several languages coalesce the grammar</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex">
+                                            <img src="assets/images/users/avatar-3.jpg"
+                                                class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="flex-1">
+                                                <h6 class="mb-1">James Lemire</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">It will seem like simplified English.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex">
+                                            <div class="avatar-xs me-3">
+                                                <span class="avatar-title bg-success rounded-circle font-size-16">
+                                                    <i class="ri-checkbox-circle-line"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-1">
+                                                <h6 class="mb-1">Your item is shipped</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">If several languages coalesce the grammar</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="" class="text-reset notification-item">
+                                        <div class="d-flex">
+                                            <img src="assets/images/users/avatar-4.jpg"
+                                                class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                            <div class="flex-1">
+                                                <h6 class="mb-1">Salena Layfield</h6>
+                                                <div class="font-size-12 text-muted">
+                                                    <p class="mb-1">As a skeptical Cambridge friend of mine occidental.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="p-2 border-top">
+                                    <div class="d-grid">
+                                        <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                            <i class="mdi mdi-arrow-right-circle me-1"></i> View More..
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-inline-block user-dropdown">
+                            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-2.jpg"
+                                    alt="Header Avatar">
+                                <span class="d-none d-xl-inline-block ms-1">Kevin</span>
+                                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <a class="dropdown-item" href="#"><i class="ri-user-line align-middle me-1"></i> Profile</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="index.html"><i class="ri-shut-down-line align-middle me-1 text-danger"></i> Logout</a>
+                            </div>
+                        </div>
+
+                        
+            
+                    </div>
+                </div>
+            </header>
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="vertical-menu">
+
+                <div data-simplebar class="h-100">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu list-unstyled" id="side-menu">
+                            <li class="menu-title">Menu</li>
+
+                            <li>
+                                <a href="dashboard.html" class="waves-effect">
+                                    <i class="ri-dashboard-line"></i>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="ri-user-fill"></i>
+                                    <span>Candidate</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="add-candidate.html">Add Candidate</a></li>
+                                    <li><a href="manage-candidate.html">Manage Candidate</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="ri-building-line"></i>
+                                    <span>Company</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="add-company.html">Add Company</a></li>
+                                    <li><a href="manage-company.html">Manage Company</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="ri-briefcase-line"></i>
+                                    <span>job posting</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="add-job-posting.html">Add job posting</a></li>
+                                    <li><a href="manage-job-posting.html">Manage job posting</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="fas fa-podcast"></i>
+                                    <span>Interview</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="interview-schedule.html">Interview Schedule</a></li>
+                                    <li><a href="manage-interview.html">Manage Interview</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="hired.html" class="waves-effect">
+                                    <i class="fas fa-handshake"></i>
+                                    <span>Hired</span>
+                                </a>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Sidebar -->
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+            
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                    <h4 class="mb-sm-0">Edit Job Posting</h4>
+
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="manage-job-posting.html">Job Posting</a></li>
+                                            <li class="breadcrumb-item active">Edit Job Posting</li>
+                                        </ol>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+                        
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+
+                                        <div class="row mb-3">
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Job Title</label>
+                                                <div class="col-sm-12">
+                                                    <input class="form-control" type="text" value="HTML Developer" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Company Name</label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control select2">
+                                                        <option>Select company Name</option>
+                                                        <option value="1"> Templatecookie</option>
+                                                        <option value="2"> Digital Point</option>
+                                                        <option value="3"> Quantum Comp Solutions</option>
+                                                        <option value="4"> TriTech International</option>
+                                                        <option value="5"> Nerdware</option>
+                                                        <option value="6"> Fiscal Analytics</option>
+                                                        <option value="7"> Radiance Software</option>
+                                                        <option value="8"> IntelliWare</option>
+                                                        <option value="9"> AddTek Software Co.</option>
+                                                        <option value="10"> Java Points</option>
+                                                        <option value="11" selected> Softtech Point</option>
+                                                        <option value="12"> Domrin</option>
+                                                        <option value="13"> Tech Giant</option>
+                                                        <option value="14"> Sales Point</option>                                                            
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 mb-2">
+                                                <label class="col-sm-12 col-form-label">Job description</label>
+                                                <div class="col-sm-12">
+                                                    <textarea id="jobdesc" name="area">
+                                                        <ul>
+                                                            <li>Candidate should have 1 – 2 year of experience</li>
+                                                            <li>Should have sound knowledge of HTML, html5, CSS, css3, bootstrap4, and Scss / Less – will be an added advantage</li>
+                                                            <li>Should have good knowledge jquery or javascript</li>
+                                                            
+                                                            </ul>
+                                                    </textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 mb-2">
+                                                <label class="col-sm-12 col-form-label">Responsibilities</label>
+                                                <div class="col-sm-12">
+                                                    <textarea id="responsibilities" name="area">
+                                                        <p>1. Design and develop WordPress plugins and themes to meet client needs and specifications<br>2. Customize existing WordPress themes and plugins to achieve desired functionality and appearance</p>
+                                                    </textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 mb-2">
+                                                <label class="col-sm-12 col-form-label">Skills and qualifications</label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control select2" multiple="multiple">
+                                                        <option value="">Select Skills</option>
+                                                        <option value="" selected>PHP</option>
+                                                        <option value="" selected>JavaScript</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 mb-2">
+                                                <label class="col-sm-12 col-form-label">Education and experience requirements</label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control select2" multiple="multiple">
+                                                        <option value="">Select Education</option>
+                                                        <option value="" selected>BCA</option>
+                                                        <option value="" selected>MCA</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Job Type</label>
+                                                <div class="col-sm-12">
+                                                    <select class="select2 form-control select2-multiple"
+                                                            multiple="multiple" data-placeholder="Select Job Type ...">
+                                                        <option value>Select Job Type</option>
+                                                        <option value="1" selected> Full Time</option>
+                                                        <option value="2"> Part Time</option>
+                                                        <option value="3"> Contract</option>
+                                                        </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Salary range</label>
+                                                <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input class="form-control" value="20,000" type="email" placeholder="Minimum Salary" id="example-text-input">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <input class="form-control" value="35,000" type="email" placeholder="Maximum Salary" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Benefits and perks</label>
+                                                <div class="col-sm-12">
+                                                    <input class="form-control" type="text" placeholder="Benefits and perks" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Remote work</label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control select2">
+                                                        <option>Select Remote work</option>
+                                                        <option value="1"> Yes</option>
+                                                        <option selected value="2"> No</option>                                              
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <label class="col-sm-12 col-form-label">Location</label>
+                                                <div class="col-sm-12">
+                                                    <input class="form-control mb-2" type="text" value="Ahmedabad, Gujarat" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <label class="col-sm-12 col-form-label">Application instructions (including contact details)</label>
+                                                <div class="col-sm-12">
+                                                    <textarea id="applicationinstructions" name="area">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil dolor ipsa quia harum ea omnis aliquid atque officia! Eos possimus debitis neque laboriosam quasi atque dicta perspiciatis aut illo!</textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Date posted</label>
+                                                <div class="col-sm-12">
+                                                    <div class="input-group" id="datepicker2">
+                                                        <input type="text" class="form-control" placeholder="dd M, yyyy" value="15 Apr, 2023"
+                                                            data-date-format="dd M, yyyy" data-date-container='#datepicker2' data-provide="datepicker"
+                                                            data-date-autoclose="true">
+    
+                                                        <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Application deadline</label>
+                                                <div class="col-sm-12">
+                                                    <div class="input-group" id="datepicker1">
+                                                        <input type="text" class="form-control" placeholder="dd M, yyyy" value="30 Apr, 2023"
+                                                            data-date-format="dd M, yyyy" data-date-container='#datepicker1' data-provide="datepicker"
+                                                            data-date-autoclose="true">
+    
+                                                        <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <label class="col-sm-12 col-form-label">Company logo and images</label>
+                                                <div class="col-sm-12">
+                                                    <input type="file" class="form-control" id="customFile" multiple="">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 mb-2">
+                                                <label class="col-sm-12 col-form-label">Company overview and mission statement</label>
+                                                <div class="col-sm-12">
+                                                    <textarea id="companyoverview" name="area">
+                                                        Softtech Point. is a technology, transformation, and analytics company. We help clients design, engineer, and launch advanced digital products and platforms that enable them to thrive and achieve more for their customers.
+                                                    </textarea>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-12 mb-2">
+                                                <label class="col-sm-12 col-form-label">Diversity and inclusion statement</label>
+                                                <div class="col-sm-12">
+                                                    <textarea id="diversityinclusion" name="area">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum aut nam, soluta dolorem sequi suscipit eligendi voluptates eveniet, magni et iure porro! Eum ipsum nisi labore repudiandae porro aliquid.</textarea>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Skills</label>
+                                                <div class="col-sm-12">
+                                                    <select class="select2 form-control select2-multiple"
+                                                            multiple="multiple" data-placeholder="Choose ...">
+                                                                <option value> Communication Skills</option>
+                                                                <option value="1">Teamwork </option>
+                                                                <option value="2">Responsibility </option>
+                                                                <option value="3">PHP </option>
+                                                                <option value="4">HTML </option>
+                                                                <option value="5">JavaScript </option>
+                                                                <option value="6">Responsive Web Designing </option>
+                                                                <option value="7">Git </option>
+                                                            </select>
+                                                </div>
+                                            </div> -->
+                                            <!-- <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Qualifications</label>
+                                                <div class="col-sm-12">
+                                                    <select class="select2 form-control select2-multiple"
+                                                    multiple="multiple" data-placeholder="Choose ...">
+                                                        <option value> Qualifications</option>
+                                                        <option value="1">High School </option>
+                                                        <option value="2">Intermediate </option>
+                                                        <option value="3">Bachelor Degree </option>
+                                                        <option value="4">Master Degree </option>
+                                                        <option value="5">Graduated </option>
+                                                        <option value="6">PhD </option>
+                                                        <option value="7">Any </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Education</label>
+                                                <div class="col-sm-12">
+                                                    <select class="select2 form-control select2-multiple"
+                                                    multiple="multiple" data-placeholder="Choose ...">
+                                                        <option value> Education</option>
+                                                        <option value="1">High School </option>
+                                                        <option value="2">Intermediate </option>
+                                                        <option value="3">Bachelor Degree </option>
+                                                        <option value="4">Master Degree </option>
+                                                        <option value="5">Graduated </option>
+                                                        <option value="6">PhD </option>
+                                                        <option value="7">Any </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Category</label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control select2">
+                                                        <option value>Select Category</option>
+                                                        <option value="1"> Engineer/Architects</option>
+                                                        <option value="2"> Garments/Textile</option>
+                                                        <option value="3"> Design/Creative</option>
+                                                        <option value="4"> Hospitality/ Travel/ Tourism</option>
+                                                        <option value="5"> IT &amp; Telecommunication</option>
+                                                        <option value="6"> Medical/Pharma</option>
+                                                        <option value="7"> Driving/Motor Technician</option>
+                                                        <option value="8"> Law/Legal</option>
+                                                        <option value="9"> Others</option>
+                                                        </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Job Type</label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control select2">
+                                                        <option value>Select Job Type</option>
+                                                        <option value="1"> Full Time</option>
+                                                        <option value="2"> Part Time</option>
+                                                        <option value="3"> Remote</option>
+                                                        <option value="4"> Freelance</option>
+                                                        </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Total Positions</label>
+                                                <div class="col-sm-12">
+                                                    <input class="form-control" type="email" placeholder="Total Positions" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Deadline</label>
+                                                <div class="col-sm-12">
+                                                    <div class="input-group" id="datepicker2">
+                                                        <input type="text" class="form-control" placeholder="dd M, yyyy"
+                                                            data-date-format="dd M, yyyy" data-date-container='#datepicker2' data-provide="datepicker"
+                                                            data-date-autoclose="true">
+    
+                                                        <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Location</label>
+                                                <div class="col-sm-12">
+                                                    <input class="form-control mb-2" type="text" placeholder="Location" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Work experience</label>
+                                                <div class="col-sm-12">
+                                                    <input class="form-control" type="text" placeholder="Work experience" id="example-text-input">
+                                                </div>
+                                            </div> -->
+                                            <!-- <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Education</label>
+                                                <div class="col-sm-12">
+                                                    <select class="form-control select2">
+                                                        <option value> Education</option>
+                                                        <option value="1">High School </option>
+                                                        <option value="2">Intermediate </option>
+                                                        <option value="3">Bachelor Degree </option>
+                                                        <option value="4">Master Degree </option>
+                                                        <option value="5">Graduated </option>
+                                                        <option value="6">PhD </option>
+                                                        <option value="7">Any </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Skills</label>
+                                                <div class="col-sm-12">
+                                                    <select class="select2 form-control select2-multiple"
+                                                            multiple="multiple" data-placeholder="Choose ...">
+                                                                <option value> Communication Skills</option>
+                                                                <option value="1">Teamwork </option>
+                                                                <option value="2">Responsibility </option>
+                                                                <option value="3">PHP </option>
+                                                                <option value="4">HTML </option>
+                                                                <option value="5">JavaScript </option>
+                                                                <option value="6">Responsive Web Designing </option>
+                                                                <option value="7">Git </option>
+                                                            </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Certifications and licenses</label>
+                                                <div class="input-group col-sm-12">
+                                                    <input type="file" class="form-control" id="customFile">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Professional accomplishments and awards</label>
+                                                <div class="col-sm-12">
+                                                    <input class="form-control" type="text" placeholder="Professional accomplishments and awards" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">References</label>
+                                                <div class="col-sm-12">
+                                                    <input class="form-control" type="text" placeholder="References" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Availability for work</label>
+                                                <div class="col-sm-12">
+                                                    <input class="form-control" type="text" placeholder="Availability for work" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Salary expectations (Monthly)</label>
+                                                <div class="col-sm-12">
+                                                    <input class="form-control" type="text" placeholder="Salary expectations (Monthly)" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label class="col-sm-12 col-form-label">Work location preference</label>
+                                                <div class="col-sm-12">
+                                                    <input class="form-control" type="text" placeholder="Work location preference" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <label class="col-sm-12 col-form-label">Diversity and inclusion data (optional)</label>
+                                                <div class="col-sm-12">
+                                                    <input class="form-control" type="text" placeholder="Diversity and inclusion data (optional)" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <label class="col-sm-12 col-form-label">Additional comments or notes</label>
+                                                <div class="col-sm-12">
+                                                    <textarea required class="form-control" rows="5"></textarea>
+                                                </div>
+                                            </div> -->
+                                            <div class="col-sm-12 mt-4 text-center">
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light me-1">
+                                                        Save
+                                                    </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+                
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                © <script>document.write(new Date().getFullYear())</script> Signature Hires. All rights reserved.
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="text-sm-end d-none d-sm-block">
+                                    Crafted with <i class="mdi mdi-heart text-danger"></i> by Elinsys
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+
+        <script src="assets/libs/select2/js/select2.min.js"></script>
+        <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <script src="assets/libs/spectrum-colorpicker2/spectrum.min.js"></script>
+        <script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+        <script src="assets/libs/admin-resources/bootstrap-filestyle/bootstrap-filestyle.min.js"></script>
+        <script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+
+        <!-- bs custom file input plugin -->
+        <script src="assets/libs/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+
+        <script src="assets/js/pages/form-element.init.js"></script>
+        <script src="assets/js/pages/form-advanced.init.js"></script>
+
+         <!--tinymce js-->
+         <script src="assets/libs/tinymce/tinymce.min.js"></script>
+
+         <!-- init js -->
+         <script src="assets/js/pages/form-editor.init.js"></script>
+
+        <script src="assets/js/app.js"></script>
+        <script>
+            //$(".select2").select2()
+            $(".select2").select2({
+                tags: true,
+                tokenSeparators: [',']
+            })
+        </script>
+
+    </body>
+</html>
