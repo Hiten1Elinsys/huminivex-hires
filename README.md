@@ -1,2 +1,4 @@
 # huminivex-hires
-this is a saas project. managing candidate's hiring process.
+This project is about to simplify the process of candidate's hiring.
+It is based on core php.
+It follows saas mechnisim.
